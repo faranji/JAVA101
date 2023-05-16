@@ -3,10 +3,13 @@ import java.util.Scanner;
 
 public class GroceryCashProgram {
     public static void main(String[] args){
+        // Değişkenlerimizin türlerini belirttik.
         double armut=2.14, elma=3.67, domates=1.11, muz=0.95, patlican= 5.00;
 
+        // Scanner sınıfımızı tanımdalık.
         Scanner input = new Scanner (System.in);
 
+        //  Kullanıcıdan verileri istedik.
         System.out.print("Armut Kaç Kilo ?:");
         int armutAdeti = input.nextInt();
 
@@ -22,6 +25,7 @@ public class GroceryCashProgram {
         System.out.print("Patlıcan Kaç Kilo ?:");
         int patlicanAdeti = input.nextInt();
 
+        // Ürün adeti ve ürün fiyatlarını çarparak toplam tutarı elde edip yazdırdık.
         System.out.println("Toplam Tutar : " + ((armut*armutAdeti)+(elma*elmaAdeti)+(domates*domatesAdeti)+(muz*muzAdeti)+(patlican*patlicanAdeti)) + "TL");
 
     }
