@@ -2,22 +2,25 @@ package basicJAVA;
 import java.util.Scanner;
 public class ChineseZodiac {
     public static void main(String[] args){
-
+        // Değişkenlerimizin türlerini belirttik.
         int bornYear;
         String zodiacSign;
 
+        // Scanner sınıfımızı tanımdalık.
         Scanner input = new Scanner(System.in);
 
+        //  Kullanıcıdan verileri istedik.
         System.out.print("Doğum Yılınızı Giriniz: ");
         bornYear = input.nextInt();
 
+        // doğum yılının 12 ile bölümünden kalan ile kullanıcının burcunu bulduk.
         switch(bornYear%12){
             case 0:
                 zodiacSign = "Maymun";
                 break;
 
             case 1:
-                zodiacSign = "Horoz"; // .equals() ne zaman kullanılıyor?
+                zodiacSign = "Horoz"; 
                 break;
 
             case 2:
@@ -64,7 +67,7 @@ public class ChineseZodiac {
                 break;
         }
 
-
+        // Çin Zodyağı burcunu atadığımız değişkeni yazdırdık.
         System.out.println("Çin Zodyağı Burcunuz: " + zodiacSign);
     }
 }
