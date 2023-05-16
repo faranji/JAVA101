@@ -22,21 +22,15 @@ public class HypotenuseCalculator {
                 
             // Hesapladığımız hipotenüs değerini yazdırdık.
             System.out.println("Hipotenüs uzunluğu: " + c);
-
-            // Kullanıcıdan verileri istedik.
-            System.out.println("Alanını öğrenmek istediğiniz üçgenin kenar uzunluklarını giriniz.");
-            int d= input.nextInt();
-            int e= input.nextInt();
-            int f= input.nextInt();
                 
             // girilen kenar uzunluklarını toplayıp ikiye bölerek u adlı değişkene atadık.
-            float u = (d+e+f)/2;
+            float u = (float) (a+b+c)/2;
                 
             // u ve kenarlarla verilen formülü kullanarak alanı hesaplayıp area adlı değişkene atadık.
-            area = (float) Math.sqrt(u*(u-d)*(u-e)*(u-f));
+            area = (float) Math.sqrt(u*(u-a)*(u-b)*(u-c));
               
             // Hesapladığımız alan değerini yazdırdık.
-            System.out.println("Alan " + area);
+            System.out.println("Alanı: " + area);
 
     
 
