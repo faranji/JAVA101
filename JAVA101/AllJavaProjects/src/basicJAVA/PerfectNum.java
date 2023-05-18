@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class PerfectNum {
     public static void main(String[] args){
         // Değişkenlerimizin türlerini belirttik.
-        int perfectNumber =0, toplam =0;
+        int perfectNumber =0, sum =0;
 
         // Scanner sınıfımızı tanımdalık.
         Scanner input = new Scanner (System.in);
@@ -18,13 +18,13 @@ public class PerfectNum {
             }
             for (int i = 1; i < perfectNumber; i++) {
                 if (perfectNumber % i == 0) {
-                    toplam += i;
+                    sum += i;
                 }
             }
             
             System.out.print(perfectNumber + " ");
             // Kendisi hariç çarpanları toplamı, kendisine eşitse "Mükemmel sayıdır" değilse "Mükemmel sayı değildir" yazdırır.
-            System.out.println((perfectNumber == toplam) ? "Mükemmel sayıdır." : "Mükemmel sayı değildir.");
+            System.out.println((perfectNumber == sum) ? "Mükemmel sayıdır." : "Mükemmel sayı değildir.");
         }
 
     }
