@@ -12,7 +12,7 @@ public class TriangleWithStars {
         System.out.print("Kaç satırlık üçgen istiyorsun?");
         rowNumber = input.nextInt();
         
-        
+        // Elmas yappp
         for (int i = 1; i <= rowNumber; i++){
             for(int k= rowNumber-i; k>=0; k--){
                 System.out.print(" ");
