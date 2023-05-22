@@ -1,6 +1,6 @@
 package basicJAVA;
-import javax.rmi.ssl.SslRMIClientSocketFactory;
 import java.util.Scanner;
+
 public class HighestAndLowestCommonFactor {
     public static void main(String[] args) {
         int num1, num2;
